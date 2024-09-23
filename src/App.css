@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  /*background: red;*/
 }
 
 .App-logo {
@@ -35,4 +36,29 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.skeleton-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid grey;
+}
+
+.skeleton-wrapper > .loader {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.skeleton-wrapper > .loader > span {
+  animation: App-logo-spin 2s infinite;
 }
